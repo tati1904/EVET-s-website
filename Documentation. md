@@ -1,6 +1,10 @@
 # Design Decision
 ## Project Cocept
+The EVET’s Cake Shop project aims to create a visually appealing and user-friendly website for a fictional bakery. The design focuses on ease of navigation, engaging visuals, and functional interactivity. Key design decisions include:
 
+Color Scheme: The website uses a light beige color (#ffebcd) for the header, navigation bar, and chat box to create a warm and inviting atmosphere, suitable for a bakery setting.
+Typography: The choice of 'Helvetica Neue', Arial, and sans-serif fonts ensures a clean and modern look. This combination enhances readability and aligns with contemporary web design standards.
+Layout: The layout is structured to provide a clear hierarchy of information. The navigation bar is prominently displayed at the top, followed by the main content area, and a fixed chat box to ensure constant availability of support.
 ## Responsive Design
 
 # Development Process
