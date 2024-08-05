@@ -11,4 +11,4 @@ To clone this repository to your local machine, follow these steps:
 
 Open your terminal or command prompt.
 Navigate to the directory where you want to clone the repository.
-Run the following command:
+Run the following command:https://github.com/tati1904/EVET-s-website.git
