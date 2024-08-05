@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVET’s Cake Shop</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #ffebcd; /* light beige color */
+            color: #333;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center content horizontally */
+            border-bottom: 2px solid #ccc;
+            position: relative;
+        }
+        header img {
+            height: 80px; /* Increase the height for a larger logo */
+            margin-right: 20px; /* Add some space between the logo and the heading */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em; /* Increase font size for the heading */
+            text-align: center;
+            flex-grow: 1; /* Ensure it takes up remaining space */
+        }
+        nav {
+            background-color: #ffebcd; /* light beige color */
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 2px solid #ccc;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin: 0 20px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ccc;
+        }
+        .sub-menu {
+            display: none;
+            position: absolute;
+            background-color: #ffebcd; /* light beige color */
+            padding: 10px;
+            border: 1px solid #ccc;
+            z-index: 1;
+        }
+        nav li {
+            position: relative;
+            list-style: none;
+            display: inline-block;
+        }
+        nav li:hover .sub-menu {
+            display: block;
+        }
+        .big-picture {
+            width: 100%;
+            height: auto;
+            max-height: 600px; /* Adjust as needed */
+            object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+        }
+        .chat-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 250px;
+            height: 300px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: block; /* Set to block for initial visibility */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .chat-box-header {
+            background-color: #ffebcd; /* light beige color */
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            border-bottom: 1px solid #ccc;
+        }
+        .chat-box-body {
+            height: 200px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+        }
+        .chat-box-footer input {
+            width: calc(100% - 20px);
+            padding: 5px;
+        }
+        .sub-menu ol {
+            padding-left: 20px;
+        }
+        .sub-menu ol li {
+            margin-bottom: 5px;
+        }
+        .catalogue {
+            padding: 20px;
+            background-color: #fff;
+        }
+        .catalogue h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .catalogue ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .catalogue li {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .catalogue li:last-child {
+            border-bottom: none;
+        }
+        .catalogue .product-name {
+            font-weight: bold;
+        }
+        .catalogue .product-price {
+            color: #333;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="images/logo.jpg" alt="EVET's Cake Shop Logo">
+    <h1>EVET’s Cake Shop</h1>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-box-header">Chat with us!</div>
+        <div class="chat-box-body">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-box-footer">
+            <input type="text" placeholder="Type your message here...">
+        </div>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li>
+            <a href="catalogue.html">Catalogue</a>
+            <div class="sub-menu">
+                <ul>
+                    <li>Cakes
+                        <ol>
+                            <li><a href="chocolate-cake.html">Chocolate Cake</a></li>
+                            <li><a href="vanilla-cake.html">Vanilla Cake</a></li>
+                            <li><a href="red-velvet-cake.html">Red Velvet Cake</a></li>
+                        </ol>
+                    </li>
+                    <li>Tarts
+                        <ol>
+                            <li><a href="apple-tart.html">Apple Tart</a></li>
+                            <li><a href="lemon-tart.html">Lemon Tart</a></li>
+                            <li><a href="strawberry-tart.html">Strawberry Tart</a></li>
+                        </ol>
+                    </li>
+                    <li>Muffins
+                        <ol>
+                            <li><a href="chocolate-muffin.html">Chocolate Muffin</a></li>
+                            <li><a href="berry-muffin.html">Berry Muffin</a></li>
+                            <li><a href="fruits-muffin.html">Fruits Muffin</a></li>
+                            <li><a href="white-chocolate-muffin.html">White Chocolate Muffin</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="eclairs.html">Eclairs</a></li>
+                    <li><a href="cake-pops.html">Cake Pops</a></li>
+                    <li><a href="croissants.html">Croissants</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li>Roulades
+                        <ol>
+                            <li><a href="fruits-roulade.html">Fruits Roulade</a></li>
+                            <li><a href="chocolate-roulade.html">Chocolate Roulade</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<img src="images/home.jpg" alt="Home Image" class="big-picture">
+
+<div class="catalogue">
+    <h2>Catalogue</h2>
+    <ul>
+        <li>
+            <span class="product-name">Chocolate Cake</span>
+            <span class="product-price">$25.00</span>
+        </li>
+        <li>
+            <span class="product-name">Vanilla Cake</span>
+            <span class="product-price">$22.00</span>
+        </li>
+        <li>
+            <span class="product-name">Red Velvet Cake</span>
+            <span class="product-price">$30.00</span>
+        </li>
+        <li>
+            <span class="product-name">Apple Tart</span>
+            <span class="product-price">$15.00</span>
+        </li>
+        <li>
+            <span class="product-name">Lemon Tart</span>
+            <span class="product-price">$17.00</span>
+        </li>
+        <li>
+            <span class="product-name">Strawberry Tart</span>
+            <span class="product-price">$18.00</span>
+        </li>
+        <li>
+            <span class="product-name">Chocolate Muffin</span>
+            <span class="product-price">$5.00</span>
+        </li>
+        <li>
+            <span class="product-name">Berry Muffin</span>
+            <span class="product-price">$5.50</span>
+        </li>
+        <li>
+            <span class="product-name">Fruits Muffin</span>
+            <span class="product-price">$5.50</span>
+        </li>
+        <li>
+            <span class="product-name">White Chocolate Muffin</span>
+            <span class="product-price">$6.00</span>
+        </li>
+        <li>
+            <span class="product-name">Eclairs</span>
+            <span class="product-price">$12.00</span>
+        </li>
+        <li>
+            <span class="product-name">Cake Pops</span>
+            <span class="product-price">$3.00 each</span>
+        </li>
+        <li>
+            <span class="product-name">Croissants</span>
+            <span class="product-price">$2.50 each</span>
+        </li>
+        <li>
+            <span class="product-name">Cookies</span>
+            <span class="product-price">$1.00 each</span>
+        </li>
+        <li>
+            <span class="product-name">Fruits Roulade</span>
+            <span class="product-price">$20.00</span>
+        </li>
+        <li>
+            <span class="product-name">Chocolate Roulade</span>
+            <span class="product-price">$22.00</span>
+        </li>
+    </ul>
+</div>
+
+<script>
+    document.querySelector('.chat-box-header').addEventListener('click', () => {
+        const chatBox = document.getElementById('chatBox');
+        chatBox.style.display = chatBox.style.display === 'block' ? 'none' : 'block';
+    });
+</script>
+
+</body>
+</html>

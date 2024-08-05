@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - EVET’s Cake Shop</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #ffebcd; /* light beige color */
+            color: #333;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center content horizontally */
+            border-bottom: 2px solid #ccc;
+            position: relative;
+        }
+        header img {
+            height: 80px; /* Increase the height for a larger logo */
+            margin-right: 20px; /* Add some space between the logo and the heading */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em; /* Increase font size for the heading */
+            text-align: center;
+            flex-grow: 1; /* Ensure it takes up remaining space */
+        }
+        nav {
+            background-color: #ffebcd; /* light beige color */
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 2px solid #ccc;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin: 0 20px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ccc;
+        }
+        .sub-menu {
+            display: none;
+            position: absolute;
+            background-color: #ffebcd; /* light beige color */
+            padding: 10px;
+            border: 1px solid #ccc;
+            z-index: 1;
+        }
+        nav li {
+            position: relative;
+            list-style: none;
+            display: inline-block;
+        }
+        nav li:hover .sub-menu {
+            display: block;
+        }
+        .blog-header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-bottom: 2px solid #ccc;
+        }
+        .blog-header h2 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .blog-posts {
+            padding: 20px;
+        }
+        .blog-post {
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .blog-post h3 {
+            margin-top: 0;
+        }
+        .blog-post p {
+            line-height: 1.6;
+        }
+        .blog-post .date {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="images/logo.jpg" alt="EVET's Cake Shop Logo">
+    <h1>EVET’s Cake Shop</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li>
+            <a href="catalogue.html">Catalogue</a>
+            <div class="sub-menu">
+                <ul>
+                    <li>Cakes
+                        <ol>
+                            <li><a href="chocolate-cake.html">Chocolate Cake</a></li>
+                            <li><a href="vanilla-cake.html">Vanilla Cake</a></li>
+                            <li><a href="red-velvet-cake.html">Red Velvet Cake</a></li>
+                        </ol>
+                    </li>
+                    <li>Tarts
+                        <ol>
+                            <li><a href="apple-tart.html">Apple Tart</a></li>
+                            <li><a href="lemon-tart.html">Lemon Tart</a></li>
+                            <li><a href="strawberry-tart.html">Strawberry Tart</a></li>
+                        </ol>
+                    </li>
+                    <li>Muffins
+                        <ol>
+                            <li><a href="chocolate-muffin.html">Chocolate Muffin</a></li>
+                            <li><a href="berry-muffin.html">Berry Muffin</a></li>
+                            <li><a href="fruits-muffin.html">Fruits Muffin</a></li>
+                            <li><a href="white-chocolate-muffin.html">White Chocolate Muffin</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="eclairs.html">Eclairs</a></li>
+                    <li><a href="cake-pops.html">Cake Pops</a></li>
+                    <li><a href="croissants.html">Croissants</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li>Roulades
+                        <ol>
+                            <li><a href="fruits-roulade.html">Fruits Roulade</a></li>
+                            <li><a href="chocolate-roulade.html">Chocolate Roulade</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<div class="blog-header">
+    <h2>Welcome to Our Blog</h2>
+    <p>Get the latest updates, baking tips, and behind-the-scenes stories from EVET’s Cake Shop.</p>
+</div>
+
+<div class="blog-posts">
+    <div class="blog-post">
+        <h3>Behind the Scenes: A Day in Our Bakery</h3>
+        <p class="date">August 10, 2024</p>
+        <img src="images/bakery-interior.jpg" alt="Bakery Interior">
+        <p>Ever wondered what goes on behind the scenes at EVET’s Cake Shop? From early morning preparations to the final touches on our delectable cakes, join us as we take you through a typical day in our bakery. Discover how our team works tirelessly to bring you the freshest and most delicious treats.</p>
+    </div>
+
+    <div class="blog-post">
+        <h3>The Perfect Cake for Every Occasion</h3>
+        <p class="date">July 25, 2024</p>
+        <img src="images/variety-of-cakes.jpg" alt="Variety of Cakes">
+        <p>Choosing the perfect cake for your special event can be overwhelming. In this post, we share some tips and ideas on selecting a cake that not only looks beautiful but tastes amazing. Whether it’s a birthday, wedding, or any other celebration, find out how EVET’s Cake Shop can make your occasion unforgettable.</p>
+    </div>
+
+    <div class="blog-post">
+        <h3>Our Secret Ingredient: Passion and Quality</h3>
+        <p class="date">June 15, 2024</p>
+        <img src="images/quality-ingredients.jpg" alt="Quality Ingredients">
+        <p>At EVET’s Cake Shop, we believe that the key to our delicious cakes lies in our commitment to quality ingredients and our passion for baking. Learn more about what makes our cakes stand out and why our customers keep coming back for more.</p>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.chat-box-header').addEventListener('click', () => {
+        const chatBox = document.getElementById('chatBox');
+        chatBox.style.display = chatBox.style.display === 'block' ? 'none' : 'block';
+    });
+</script>
+
+</body>
+</html>
